@@ -1,0 +1,36 @@
+.card {
+	width: 300px;
+	border-radius: 10px;
+
+	&:hover {
+		box-shadow: 1px 1px 4px 5px #ccc;
+	}
+
+	&__image-container {
+		width: 100%;
+		height: 169px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px; 
+	}	
+
+	&__content {
+		padding: 10px;
+
+		&--title, &--timestamp {
+			margin: 0;
+		}
+
+		&--title {
+			font-weight: 600;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		&--timestamp {
+			font-size: 14px;
+		}
+	}
+}
