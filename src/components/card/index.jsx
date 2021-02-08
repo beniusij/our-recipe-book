@@ -1,6 +1,6 @@
 import React from "react"
 import Placeholder from '../../images/placeholder.jpg'
-import './card.scss'
+import './index.scss'
 
 const data = {
   title: 'The Fantastic Vegetarian Lasagne',
