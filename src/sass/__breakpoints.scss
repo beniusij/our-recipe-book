@@ -1,0 +1,29 @@
+// Breakpoints
+$phone-width: 576px;
+$tablet-width: 716px;
+$desktop-width: 1024px;
+$highdef-width: 1300px;
+
+@mixin phone {
+  @media (min-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin highdef {
+  @media (min-width: #{$highdef-width}) {
+    @content;
+  }
+}
