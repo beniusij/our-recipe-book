@@ -1,15 +1,19 @@
 @import '__typography.scss';
 
 body {
-	h1, h2, h3, h4, h5, h6 {
-		font-family: "Open Sans Bold";
-	}
+	margin: 0;
+	padding: 0;
+	background-color: $background;
+}
 
-	p, a {
-		font-family: "Open Sans";
-	}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Open Sans Bold";
+}
 
-	b {
-		font-family: "Open Sans Bold";
-	}
+p, a {
+	font-family: "Open Sans";
+}
+
+b {
+	font-family: "Open Sans Bold";
 }
