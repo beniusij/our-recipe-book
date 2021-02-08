@@ -16,7 +16,7 @@ const Card = (props) => {
 		<div className='card'>
 			<div className='card__image-container' style={{backgroundImage: `url(${img})`,}}></div>
 			<div className='card__content'>
-				<p className='card__content--title'>{data.title}</p>
+				<h1 className='card__content--title'>{data.title}</h1>
 				<p className='card__content--timestamp'>{dateTime}</p>
 			</div>
 		</div>

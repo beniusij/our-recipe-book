@@ -1,9 +1,10 @@
 .card {
 	width: 300px;
 	border-radius: 10px;
-
+	cursor: pointer;
+	
 	&:hover {
-		box-shadow: 1px 1px 4px 5px #ccc;
+		box-shadow: 1px 1px 4px 5px $shadow;
 	}
 
 	&__image-container {
@@ -24,7 +25,7 @@
 		}
 
 		&--title {
-			font-weight: 600;
+			// font-weight: 600;
 			font-size: 20px;
 			margin-bottom: 20px;
 		}
