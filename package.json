@@ -14,9 +14,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.31.1",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-sass-resources": "^2.0.0",
+    "gatsby-source-contentful": "^4.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sass": "^1.32.6"
