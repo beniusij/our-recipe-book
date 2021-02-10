@@ -27,7 +27,7 @@ export default IndexPage
 
 export const query = graphql`
 	query RecipeQuery {
-		allContentfulRecipe(limit: 5) {
+		allContentfulRecipe(limit: 5, sort: {order: ASC, fields: updatedAt}) {
 		    nodes {
 		      title
 		      image {

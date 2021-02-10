@@ -6,7 +6,7 @@
 	background-color: $white;
 	
 	&:hover {
-		box-shadow: 1px 1px 4px 5px $shadow;
+		box-shadow: 4px 5px $shadow;
 	}
 
 	&__image-container {
@@ -21,6 +21,8 @@
 
 	&__content {
 		padding: 10px;
+		height: 95px;
+		position: relative;
 
 		&--title, &--timestamp {
 			margin: 0;
@@ -35,6 +37,8 @@
 		&--timestamp {
 			font-size: 14px;
 			color: $timestamp;
+			position: absolute;
+			bottom: 10px;
 		}
 	}
 }
