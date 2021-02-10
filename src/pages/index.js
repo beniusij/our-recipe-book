@@ -6,24 +6,28 @@ import { graphql } from 'gatsby'
 
 // markup
 const IndexPage = ({data}) => {
-	data.then( data => {
-		console.log(data)		
-	})
+	// graphQL query
 	return (
   	<div className="container">
-  		<Card></Card>
-  		<Card></Card>
-  		<Card></Card>
-  		<Card></Card>
-  		<Card></Card>
+  		{ data.allContentfulRecipe.nodes.map((recipe, i) => {
+  			return (
+  				<Card 
+  					key={i}
+						title={recipe.title}
+						img={recipe.image.file.url}
+						updatedAt={recipe.updatedAt}
+  				/>
+				)	
+  		})}
   	</div>
   )
 }
 
-// graphQL query
-const pageQuery = graphql`
-	query MyQuery {
-		allContentfulRecipe(limit: 1) {
+export default IndexPage
+
+export const query = graphql`
+	query RecipeQuery {
+		allContentfulRecipe(limit: 5) {
 		    nodes {
 		      title
 		      image {
@@ -35,6 +39,4 @@ const pageQuery = graphql`
 		    }
 		}
 	}
-`
-
-export default IndexPage
+`	
