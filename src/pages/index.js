@@ -1,6 +1,6 @@
 import * as React from "react"
 import '../sass/global.scss'
-import '../sass/layout.scss'
+import Container from '../components/container'
 import Card from '../components/card'
 import { graphql } from 'gatsby'
 
@@ -8,18 +8,18 @@ import { graphql } from 'gatsby'
 const IndexPage = ({data}) => {
 	// graphQL query
 	return (
-  	<div className="container">
+  	<Container>
   		{ data.allContentfulRecipe.nodes.map((recipe, i) => {
   			return (
   				<Card 
-  					key={i}
+  					key={recipe.id}
 						title={recipe.title}
 						img={recipe.image.file.url}
 						updatedAt={recipe.updatedAt}
   				/>
-				)	
+			)	
   		})}
-  	</div>
+  	</Container>
   )
 }
 
@@ -29,6 +29,7 @@ export const query = graphql`
 	query RecipeQuery {
 		allContentfulRecipe(limit: 5, sort: {order: ASC, fields: updatedAt}) {
 		    nodes {
+		    	id
 		      title
 		      image {
 		      	file {
