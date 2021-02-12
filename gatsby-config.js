@@ -6,8 +6,8 @@ module.exports = {
     	{
     		resolve: 'gatsby-plugin-sass-resources',
     		options: {
-				resources: ['./src/sass/resources.scss']
-			}
+  				resources: ['./src/sass/resources.scss']
+  			}
     	},
     	{
     		resolve: 'gatsby-source-contentful',
@@ -18,3 +18,4 @@ module.exports = {
     	}
     ]
 }
+
