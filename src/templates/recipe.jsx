@@ -1,15 +1,20 @@
 import React from 'react'
 // import './index.scss'
 import Container from '../components/container'
+import Header from '../components/header'
 
-const Recipe = ({ pageContext }) => {
-	// console.log(pageContext)
-	const recipe = pageContext
+const Recipe = (pageContext) => {
+	const recipe = pageContext.pathContext.recipe
+	// console.log()
 	return (
-		<Container>
-			<p>{recipe.title}</p>
-			<p>Test</p>
-		</Container>
+		<>
+		<Header
+			img={recipe.image.file.url}
+		>
+			<h1>{recipe.title}</h1>
+		</Header>
+		<Container></Container>
+		</>
 	)
 }
 

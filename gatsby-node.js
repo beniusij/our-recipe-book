@@ -36,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
         path: `/recipes/${slugify(node.title)}`,
         component: recipeTemplate,
         context: {
-          // recipe: node
+          recipe: node
         }
      })
 
