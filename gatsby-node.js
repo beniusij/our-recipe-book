@@ -4,7 +4,7 @@ const slugify = require('./src/utils/slugify.js')
 // Set up recipe pages
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const recipeTemplate = path.resolve('src/templates/recipe.jsx')
+  const recipeTemplate = path.resolve('src/templates/recipe/recipe.jsx')
 
   return graphql(`
     query AlLRecipes {
