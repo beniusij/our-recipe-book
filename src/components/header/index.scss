@@ -1,0 +1,25 @@
+.header {
+	padding: 10px;
+	width: auto;
+	height: 56.25vw;
+	position: relative;
+	background-size: cover;
+	background-size: center;
+
+	&--overlay {
+		height: 50%;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(0, $gradient, transparent);
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 1.5em;
+		position: absolute;
+		bottom: 25px;
+		color: $white;
+	}
+}
