@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../../components/container'
 import Header from '../../components/header'
 import List from '../../components/list'
+import RichText from '../../components/rich-text'
 
 const Recipe = (pageContext) => {
 	const recipe = pageContext.pathContext.recipe
@@ -13,11 +14,13 @@ const Recipe = (pageContext) => {
 		<Container>
 			<div className='content ingredients'>
 				<List 
-					title= { `You will need...` }
+					title= { 'You will need...' }
 					ingredients={ recipe.ingredients } 
 				/>
 			</div>
-			<div className='content instructions'></div>
+			<div className='content instructions'>
+				<RichText title={'And here is how to do it...'} text={ recipe.instructions.raw } />
+			</div>
 		</Container>
 		</>
 	)
