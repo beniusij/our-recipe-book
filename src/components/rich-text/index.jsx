@@ -1,22 +1,14 @@
 import React from 'react'
 import './index.scss'
-import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-// const Text = ({ children }) => <p>{children}</p>
-
-// const options = {
-// 	renderMark: {},
-// 	renderNode: {
-// 		[BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
-// 	}
-// }
 
 const RichText = (props) => {
-	console.log(props.text)
+	const body = JSON.parse(props.text)
 	return (
 		<>
 			<h2>{props.title}</h2>
-			{ renderRichText(props.text) }
+			{ documentToReactComponents(body) }
 		</>
 	)
 }
