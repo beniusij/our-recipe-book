@@ -1,0 +1,12 @@
+.ingredients {
+	@include tablet {
+		width: 30%;
+	}
+}
+
+.instructions {
+	@include tablet {
+		padding-left: 30px;
+		width: 65%;
+	}
+}

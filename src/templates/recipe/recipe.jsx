@@ -3,6 +3,7 @@ import Container from '../../components/container'
 import Header from '../../components/header'
 import List from '../../components/list'
 import RichText from '../../components/rich-text'
+import "./recipe.scss"
 
 const Recipe = (pageContext) => {
 	const recipe = pageContext.pathContext.recipe

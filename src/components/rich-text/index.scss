@@ -1,0 +1,11 @@
+.rich-text {
+	ol {
+		padding-left: 25px;
+	}
+
+	@include tablet {
+		h2 {
+			margin-top: 0;
+		}
+	}
+}
