@@ -4,15 +4,19 @@ import Header from '../../components/header'
 import List from '../../components/list'
 import RichText from '../../components/rich-text'
 import "./recipe.scss"
+import Portions from '../../components/portions'
 
 const Recipe = (pageContext) => {
 	const recipe = pageContext.pathContext.recipe
 	return (
 		<>
-		<Header img={recipe.image.file.url} >
+		<Header img={recipe.image.file.url} classNames={'recipe'} >
 			<h1>{recipe.title}</h1>
 		</Header>
 		<Container>
+			<div className="content-meta">
+				<Portions portionCount={recipe.portions} />
+			</div>
 			<div className='content ingredients'>
 				<List 
 					title= { 'You will need...' }
