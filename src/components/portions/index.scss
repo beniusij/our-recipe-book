@@ -1,0 +1,13 @@
+.portions {
+	display: flex;
+
+	&__icon {
+		height: 30px;
+		width: 30px;
+	}
+
+	&__text {
+		margin: 5px 10px;
+		font-size: 14px;
+	}
+}
