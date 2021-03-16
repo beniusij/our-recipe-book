@@ -7,10 +7,10 @@
 	margin: 0 auto;
 
 	@include tablet {
-		max-width: 640px;
+		max-width: 620px;
 	}
 
 	@include desktop {
-		max-width: 960px;
+		max-width: 930px;
 	}
 }
