@@ -41,4 +41,12 @@
 			bottom: 10px;
 		}
 	}
+
+	&--link {
+		margin: 0 auto;
+
+		@include tablet {
+			margin: 0;
+		}
+	}
 }
