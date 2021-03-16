@@ -11,7 +11,7 @@ This project is about getting to know Contentful and Gatsby better while buildin
 List of items to implement before launching the project:
 
 - [x] Recipe cards
-- [ ] Recipe templates
+- [x] Recipe templates
 - [ ] Pagination (or Show More)
 - [ ] Simple search (by tag, keywords etc)
 - [ ] Localisation (so moms can try it too)
