@@ -2,7 +2,8 @@ import * as React from "react"
 import '../sass/global.scss'
 import Container from '../components/container'
 import Card from '../components/card'
-import { graphql, Link } from 'gatsby'
+import LoadMore from '../components/load-more'
+import { graphql } from 'gatsby'
 
 const slugify = require('../utils/slugify.js')
 
@@ -13,15 +14,16 @@ const IndexPage = ({data}) => {
   	<Container>
   		{ data.allContentfulRecipe.nodes.map((recipe, i) => {
   			return (
-  				<Link to={`/recipes/${slugify(recipe.title)}`} key={i}>
-	  				<Card 
-						title={recipe.title}
-						img={recipe.image.file.url}
-						updatedAt={recipe.updatedAt}
-	  				/>
-  				</Link>
+  				<Card
+  					key={i} 
+					title={recipe.title}
+					img={recipe.image.file.url}
+					updatedAt={recipe.updatedAt}
+					link={`/recipes/${slugify(recipe.title)}`}
+  				/>
 			)	
   		})}
+  		<LoadMore />
   	</Container>
   )
 }
