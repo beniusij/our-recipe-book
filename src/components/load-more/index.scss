@@ -1,0 +1,28 @@
+.container--load-more {
+	width: 300px;
+	margin: 5px;
+	position: relative;
+}
+
+.load-more {
+	height: fit-content;
+	margin: 10px;
+	padding: 5px 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	background-color: transparent;
+	font-size: 18px;
+	color: $black;
+
+	&:hover {
+		border-bottom: 1px solid $black; 
+		cursor: pointer;
+	}
+
+	&:focus {
+		border: none;	
+	}
+}
