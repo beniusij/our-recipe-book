@@ -14,7 +14,7 @@ const Recipe = (pageContext) => {
 			<h1>{recipe.title}</h1>
 		</Header>
 		<Container>
-			<div className="content-meta">
+			<div className="content content-meta">
 				<Portions portionCount={recipe.portions} />
 			</div>
 			<div className='content ingredients'>
