@@ -3,6 +3,17 @@
 	min-height: 50px;
 	margin: 5px auto;
 	position: relative;
+	cursor: pointer;
+
+	@include tablet {
+		margin: 5px;
+	}
+
+	&:hover {
+		& > .load-more {
+			border-bottom: 1px solid $black; 
+		}
+	}
 }
 
 .load-more {
@@ -17,11 +28,6 @@
 	background-color: transparent;
 	font-size: 18px;
 	color: $black;
-
-	&:hover {
-		border-bottom: 1px solid $black; 
-		cursor: pointer;
-	}
 
 	&:focus {
 		border: none;

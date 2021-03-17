@@ -1,10 +1,13 @@
 import React from 'react'
 import './index.scss'
 
-const LoadMore = (props) => {
+const LoadMore = ({ onClickHandle }) => {
 	return (
-		<div className="container--load-more">
-			<button className="load-more" onClick={(e) => { console.log('Clicked load more') }}>
+		<div 
+			className="container--load-more" 
+			onClick={ onClickHandle }
+		>
+			<button className="load-more">
 				Load More >
 			</button>
 		</div>

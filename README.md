@@ -14,5 +14,10 @@ List of items to implement before launching the project:
 - [x] Recipe templates
 - [ ] Pagination (or Show More)
 - [ ] Simple search (by tag, keywords etc)
-- [ ] Localisation (so moms can try it too)
 - [ ] Ingredients as json lists & ingredient components
+
+Items to implement after setting up on host:
+
+- [ ] Localisation (so moms can try it too)
+- [ ] Favorited items (cookie-based)
+- [ ] PWA (native to phone, offline page)
