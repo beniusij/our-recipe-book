@@ -12,7 +12,7 @@ List of items to implement before launching the project:
 
 - [x] Recipe cards
 - [x] Recipe templates
-- [ ] Pagination (or Show More)
+- [x] Pagination (or Show More)
 - [ ] Simple search (by tag, keywords etc)
 - [ ] Ingredients as json lists & ingredient components
 
