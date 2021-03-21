@@ -37,7 +37,6 @@ const Search = (props) => {
 			<SearchBar handleChange={handleChange} />
 			{ results.length > 0 ? <SectionTitle>Results for {searchQuery}</SectionTitle> : "" }
 			{
-				results.length > 0 ?
 				results.map((node, key) => {
 					return (
 						<Card
@@ -48,7 +47,7 @@ const Search = (props) => {
 							link={`/recipes/${slugify(node.title)}`} 
 						/>
 					)
-				}) : ''
+				})
 			}
 		</Container>	
 	)
