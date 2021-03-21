@@ -53,7 +53,7 @@ const IndexPage = ({data}) => {
 		<>
 				<Search />
 		  	<Container>
-		  	<SectionTitle>All our recipes</SectionTitle>
+			  	<SectionTitle>All our recipes</SectionTitle>
 		  		{ list.map((recipe, i) => {
 		  			return (
 		  				<Card

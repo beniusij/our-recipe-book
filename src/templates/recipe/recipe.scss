@@ -15,10 +15,10 @@
 .instructions {
 	@include tablet {
 		padding-left: 30px;
-		width: 52%;
+		width: 51%;
 	}
 
 	@include desktop {
-		width: 58%;
+		width: 57.5%;
 	}
 }
