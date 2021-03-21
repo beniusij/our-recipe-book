@@ -17,11 +17,13 @@
     "@contentful/rich-text-react-renderer": "^14.1.2",
     "dotenv": "^8.2.0",
     "gatsby": "^2.31.1",
+    "gatsby-plugin-local-search": "^2.0.0",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-sass-resources": "^2.0.0",
     "gatsby-source-contentful": "^4.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-use-flexsearch": "^0.1.1",
     "sass": "^1.32.6"
   }
 }

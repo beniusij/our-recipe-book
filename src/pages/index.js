@@ -3,7 +3,9 @@ import '../sass/global.scss'
 import Container from '../components/container'
 import Card from '../components/card'
 import LoadMore from '../components/load-more'
-import { graphql } from 'gatsby'
+import { graphql, useStaticQuery } from "gatsby"
+import Search from '../components/search'
+import SectionTitle from '../components/section-title'
 
 const slugify = require('../utils/slugify.js')
 
@@ -48,25 +50,29 @@ const IndexPage = ({data}) => {
 	}, [list]) //eslint-disable-line
 
 	return (
-	  	<Container>
-	  		{ list.map((recipe, i) => {
-	  			return (
-	  				<Card
-	  					key={i} 
-							title={recipe.title}
-							img={recipe.image.file.url}
-							updatedAt={recipe.updatedAt}
-							link={`/recipes/${slugify(recipe.title)}`}
-	  				/>
-				)	
-	  		})}
+		<>
+				<Search />
+		  	<Container>
+		  	<SectionTitle>All our recipes</SectionTitle>
+		  		{ list.map((recipe, i) => {
+		  			return (
+		  				<Card
+		  					key={i} 
+								title={recipe.title}
+								img={recipe.image.file.url}
+								updatedAt={recipe.updatedAt}
+								link={`/recipes/${slugify(recipe.title)}`}
+		  				/>
+					)	
+		  		})}
 
-	  		{
-	  			hasMore ?
-	  			<LoadMore onClickHandle={handleLoadMore} /> :
-	  			''
-	  		}
-	  	</Container>
+		  		{
+		  			hasMore ?
+		  			<LoadMore onClickHandle={handleLoadMore} /> :
+		  			''
+		  		}
+		  	</Container>
+	  	</>
 	)
 }
 
