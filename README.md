@@ -13,8 +13,7 @@ List of items to implement before launching the project:
 - [x] Recipe cards
 - [x] Recipe templates
 - [x] Pagination (or Show More)
-- [ ] Simple search (by tag, keywords etc)
-- [ ] Ingredients as json lists & ingredient components
+- [x] Simple search (by tag, keywords etc)
 
 Items to implement after setting up on host:
 
