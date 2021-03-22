@@ -15,7 +15,7 @@ List of items to implement before launching the project:
 - [x] Pagination (or Show More)
 - [x] Simple search (by tag, keywords etc)
 
-Items to implement after setting up on host:
+Items to implement after setting up on heroku:
 
 - [x] Set up cron job in GitHub Actions to redeploy site every week
 - [ ] Localisation (so moms can try it too)
