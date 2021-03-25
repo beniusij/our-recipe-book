@@ -6,6 +6,7 @@ const LoadMore = ({ onClickHandle }) => {
 		<div 
 			className="container--load-more" 
 			onClick={ onClickHandle }
+			onKeyPress={() => {}}
 		>
 			<button className="load-more">
 				Load More >
