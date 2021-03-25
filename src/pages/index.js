@@ -6,6 +6,7 @@ import LoadMore from '../components/load-more'
 import { graphql, useStaticQuery } from "gatsby"
 import Search from '../components/search'
 import SectionTitle from '../components/section-title'
+import Favourites from '../components/favourites'
 
 const slugify = require('../utils/slugify.js')
 
@@ -52,27 +53,28 @@ const IndexPage = ({data}) => {
 	return (
 		<>
 			<Search />
-		  	<Container>
-			  	<SectionTitle>All our recipes</SectionTitle>
-		  		{ list.map((recipe, i) => {
-		  			return (
-		  				<Card
-		  					key={i} 
-								title={recipe.title}
-								img={recipe.image.file.url}
-								updatedAt={recipe.updatedAt}
-								link={`/recipes/${slugify(recipe.title)}`}
-		  				/>
-					)	
-		  		})}
+			<Favourites />
+	  	<Container>
+		  	<SectionTitle>All our recipes</SectionTitle>
+	  		{ list.map((recipe, i) => {
+	  			return (
+	  				<Card
+	  					key={i} 
+							title={recipe.title}
+							img={recipe.image.file.url}
+							updatedAt={recipe.updatedAt}
+							link={`/recipes/${slugify(recipe.title)}`}
+	  				/>
+				)	
+	  		})}
 
-		  		{
-		  			hasMore ?
-		  			<LoadMore onClickHandle={handleLoadMore} /> :
-		  			''
-		  		}
-		  	</Container>
-	  	</>
+	  		{
+	  			hasMore ?
+	  			<LoadMore onClickHandle={handleLoadMore} /> :
+	  			''
+	  		}
+	  	</Container>
+  	</>
 	)
 }
 
