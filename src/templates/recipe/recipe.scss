@@ -5,6 +5,14 @@
 	margin: 10px;
 }
 
+.content-meta {
+	display: flex;
+
+	& > div:last-child {
+		margin-left: auto; 
+	}
+}
+
 .ingredients {
 	@include tablet {
 		width: 30%;

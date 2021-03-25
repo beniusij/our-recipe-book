@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6, b, button {
 	font-family: "Open Sans Bold";
 }
 
+b {
+	color: $highlight;
+}
+
 p, a, li, input {
 	font-family: "Open Sans";
 }

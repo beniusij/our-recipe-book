@@ -6,7 +6,7 @@ const Portions = ({ portionCount }) => {
 	const counter = portionCount === 1 ? portionCount + " portion" : portionCount + " portions" 
 
 	return (
-		<div class="portions">
+		<div className="portions">
 			<img src={icon} alt="Portions icon" className="portions__icon" />
 			<p className="portions__text">{counter}</p>
 		</div>
