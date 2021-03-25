@@ -22,7 +22,7 @@ const Favourites = () => {
 										key={i}
 										title={favourites[key].title}
 										img={favourites[key].image.file.url}
-										updated={favourites[key].updatedAt}
+										updatedAt={favourites[key].updatedAt}
 										link={`/recipes/${key}`} 
 									/>
 								)
