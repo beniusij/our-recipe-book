@@ -6,8 +6,12 @@ import Card from '../card'
 const itemName = 'favourite-recipes'
 
 const Favourites = () => {
+	// Check if window is available
+	if (typeof window === 'undefined') return ('')
+
 	const localStorage = window.localStorage
-	const favourites = JSON.parse(localStorage.getItem(itemName))
+	let favourites = JSON.parse(localStorage.getItem(itemName))
+	favourites = typeof favourites === 'undefined' || favourites === null ? {} : favourites
 	const keys = Object.keys(favourites)
 
 	return (

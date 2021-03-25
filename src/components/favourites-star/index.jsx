@@ -7,6 +7,12 @@ const slugify = require('../../utils/slugify.js')
 const itemName = 'favourite-recipes'
 
 const FavouritesStar = ({ data }) => {
+	// Set up state
+	const [favourite, setFavourite] = useState(false)
+
+	// Check if window is available
+	if (typeof window === 'undefined') return (favourite)
+
 	// Get item
 	const localStorage = window.localStorage
 	let favourites = JSON.parse(localStorage.getItem(itemName))
@@ -17,8 +23,8 @@ const FavouritesStar = ({ data }) => {
 	// Create blank array if item doesn't exist
 	favourites = favourites ? favourites : {}
 
-	// Check if this recipe is favourited and create state
-	const [favourite, setFavourite] = useState(key in favourites)
+	// Check if this recipe is favourited and update state
+	if (key in favourites && !favourite) setFavourite(key in favourites)
 
 	// onClick handler to favourite/unfavourite the 
 	const handleClick = () => {

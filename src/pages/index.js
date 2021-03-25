@@ -3,7 +3,7 @@ import '../sass/global.scss'
 import Container from '../components/container'
 import Card from '../components/card'
 import LoadMore from '../components/load-more'
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import Search from '../components/search'
 import SectionTitle from '../components/section-title'
 import Favourites from '../components/favourites'
