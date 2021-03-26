@@ -19,7 +19,7 @@ Items to implement after setting up on heroku:
 
 - [x] Set up cron job in GitHub Actions to redeploy site every week
 - [ ] Localisation (so moms can try it too)
-- [ ] Favorited items (cookie-based)
+- [x] Favorited items (cookie-based)
 - [ ] PWA (native to phone, offline page)
 
 After adding 100 recipes:
