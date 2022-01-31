@@ -19,9 +19,3 @@ Items to implement after setting up on heroku:
 
 - [x] Set up cron job in GitHub Actions to redeploy site every week
 - [x] Favorited items (cookie-based)
-
-After adding 100 recipes:
-
-- [ ] Buy a domain and register with the app
-- [ ] Improve SEO
-- [ ] Change recipe header to have fixed width on big screens 
